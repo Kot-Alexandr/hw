@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AffairType } from '../../HW2'
 import s from './Affair.module.css'
 import s2 from '../Affairs.module.css'
+
 
 type AffairPropsType = {
     affair: AffairType
@@ -17,6 +18,7 @@ function Affair(props: AffairPropsType) {
     const buttonClass = s.closeButton + ' ' + s2[props.affair.priority]
     const affairClass = s.affair + ' ' + s2[props.affair.priority]
 
+    
     return (
         <div
             id={'hw2-affair-' + props.affair._id}
@@ -39,8 +41,12 @@ function Affair(props: AffairPropsType) {
                 X
                 {/**/}
             </button>
+            
         </div>
     )
 }
 
+
+
 export default Affair
+
