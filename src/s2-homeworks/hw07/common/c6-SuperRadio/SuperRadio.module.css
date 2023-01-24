@@ -1,15 +1,38 @@
 .radio {
+    margin-right: 15px;
+    border-color: hotpink;
 }
 
 .radio::before {
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(0, 0, 0);
+
 }
 
 
 .radio:checked::before {
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    position: relative;
+    background-color: #000000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.1em rgba(15, 28, 63, 1);
 }
 
 .label {
+    display: flex;
+    margin-top: 10px;
 }
 
-.options {
-}
+.options {}
