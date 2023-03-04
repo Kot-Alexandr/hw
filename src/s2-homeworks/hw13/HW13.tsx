@@ -51,13 +51,13 @@ const HW13 = () => {
                 } else if (e.response.status === 400) {
                     setCode('Ошибка 500!')
                     setImage(error500)
-                    setText(e.data.errorText)
-                    setInfo(e.data.info)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 } else {
                     setCode('Error!')
                     setImage(errorUnknown)
-                    setText(e.data.errorText)
-                    setInfo(e.data.info)
+                    setText(e.message)
+                    setInfo(e.name)
                 }
                 // дописать
 
