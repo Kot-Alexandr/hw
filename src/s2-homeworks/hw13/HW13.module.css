@@ -1,22 +1,35 @@
 .buttonsContainer {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
 }
 
 .responseContainer {
+    display: flex;
 }
 
-.imageContainer {
-}
+.imageContainer {}
 
 .image {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
 }
 
-.textContainer{
+.textContainer {
+    margin-left: 50px;
 }
 
 .code {
+    margin-top: 150px;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .text {
+    margin-top: 20px;
+    white-space: pre;
 }
-.info {
-}
+
+.info {}
